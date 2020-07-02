@@ -1,37 +1,49 @@
 <template>
-   <header>
+  <header>
     <nav>
       <section class="header">
-          <div class="grid-item"><div class="grid-items">1 </div></div>
-            <div class="grid-item">1</div>
-              <div class="grid-item">1</div>
-             
+        <div class="grid-item border-bottom">1</div>
+        <div class="grid-item border-left border-right border-bottom">2</div>
+
+        <div class="grid-item border-left border-right border-bottom">3</div>
+        <div class="grid-item border-left border-right border-bottom">4</div>
+        <div class="grid-item border-bottom">5</div>
+        <div class="grid-item border-left border-bottom">6</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">1</div>
       </section>
     </nav>
-   </header>
+  </header>
 </template>
 
 <style scoped>
-
 .header {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 100px 150px auto 150px 100px 100px;
+  padding: 10px;
+  background-color: #202020;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-
   padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-.grid-items {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 30px;
+  font-size: 12px;
   text-align: center;
 }
 
-
+.border-left {
+  border-left: 1px solid gray;
+  position: relative;
+  bottom: 10px;
+}
+.border-right {
+  border-right: 1px solid gray;
+}
+.border-bottom {
+  border-bottom: 1px solid gray;
+  position: relative;
+  bottom: 10px;
+}
 </style>
